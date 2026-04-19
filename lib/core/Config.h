@@ -15,14 +15,20 @@ namespace Config
     // Motor a pasos
     const uint8_t STEPPER_STEP = 4;
     const uint8_t STEPPER_DIR = 7;
-    const uint8_t STEPPER_STEPS_PER_REV = 200;
-    const unsigned long STEPPER_DEFAULT_SPEED = 2000UL;
 
     // Clasificador
     const uint8_t SORTER_SERVO = 9;
 
     // Sensores
     const uint8_t COLOR_SENSOR = 8;
+  }
+
+  namespace Values
+  {
+    
+    const uint8_t STEPPER_STEPS_PER_REV = 200;
+    const unsigned long STEPPER_DEFAULT_SPEED = 2000UL;
+    const uint8_t DISPENSER_STEPS_PER_TOKEN = 33;
   }
 
   namespace System

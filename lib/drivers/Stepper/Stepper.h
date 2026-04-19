@@ -26,7 +26,7 @@ class Stepper
     void stop();
 
     void setSpeed(unsigned long interval);
-    void setspeedRPM(int rpm, int stepsPerRev = Config::Pins::STEPPER_STEPS_PER_REV);
+    void setspeedRPM(int rpm, int stepsPerRev = Config::Values::STEPPER_STEPS_PER_REV);
 
     void update();
 

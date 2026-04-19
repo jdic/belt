@@ -7,7 +7,7 @@ Stepper::Stepper(uint8_t stepPin, uint8_t dirPin)
   this->dirPin = dirPin;
   this->currentPosition = 0;
   this->targetPosition = 0;
-  this->stepInterval = Config::Pins::STEPPER_DEFAULT_SPEED;
+  this->stepInterval = Config::Values::STEPPER_DEFAULT_SPEED;
   this->lastStepTime = 0;
 }
 
