@@ -7,14 +7,16 @@ namespace Config
 {
   namespace Pins
   {
-    // Banda Transporadora
-    const uint8_t CONVEYOR_ENCODER_A = 2;
-    const uint8_t CONVEYOR_ENCODER_B = 3;
-    const uint8_t CONVEYOR_PWM = 5;
+    // Motoreductor
+    const uint8_t GEARMOTOR_ENCODER_A = 2;
+    const uint8_t GEARMOTOR_ENCODER_B = 3;
+    const uint8_t GEARMOTOR_PWM = 5;
 
-    // Dipensador
-    const uint8_t DISPENSER_STEP = 4;
-    const uint8_t DISPENSER_DIR = 7;
+    // Motor a pasos
+    const uint8_t STEPPER_STEP = 4;
+    const uint8_t STEPPER_DIR = 7;
+    const uint8_t STEPPER_STEPS_PER_REV = 200;
+    const unsigned long STEPPER_DEFAULT_SPEED = 2000UL;
 
     // Clasificador
     const uint8_t SORTER_SERVO = 9;
@@ -25,7 +27,7 @@ namespace Config
 
   namespace System
   {
-    const unsigned long SERIAL_BAUD_RATE = 115200;
+    const unsigned long SERIAL_BAUD_RATE = 115200UL;
   }
 }
 
