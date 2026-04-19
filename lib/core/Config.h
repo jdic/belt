@@ -25,7 +25,6 @@ namespace Config
 
   namespace Values
   {
-    
     const uint8_t STEPPER_STEPS_PER_REV = 200;
     const unsigned long STEPPER_DEFAULT_SPEED = 2000UL;
     const uint8_t DISPENSER_STEPS_PER_TOKEN = 33;
