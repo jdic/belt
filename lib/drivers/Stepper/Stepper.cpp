@@ -49,11 +49,11 @@ void Stepper::update()
 {
   if (currentPosition != targetPosition)
   {
-    unsigned long currentMicros = millis();
+    unsigned long currentMicros = micros();
 
     if ((currentMicros - lastStepTime) >= stepInterval)
     {
-      lastStepTime = currentPosition;
+      lastStepTime = currentMicros;
 
       // Dirección
       bool isForward = (targetPosition > currentPosition);
