@@ -1,16 +1,16 @@
 #include <Arduino.h>
 #include "Config.h"
-#include "ServoDriver.h"
+#include "Servomotor/Servomotor.h"
 
-ServoDriver sortingServo(Config::Pins::SORTER_SERVO);
+Servomotor servomotor(Config::Pins::SORTER_SERVO);
 
 void setup()
 {
-  sortingServo.init();
-  sortingServo.setAngle(45);
+  servomotor.init();
+  servomotor.setAngle(45);
 }
 
 void loop()
 {
-  sortingServo.update();
+  servomotor.update();
 }
