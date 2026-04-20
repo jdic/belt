@@ -7,6 +7,11 @@ OpticalSensor::OpticalSensor(uint8_t analogPin, bool activeHigh)
   this->threshold = 512;
 }
 
+void OpticalSensor::init()
+{
+  pinMode(analogPin, INPUT);
+}
+
 void OpticalSensor::setThreshold(int thresholdValue)
 {
   this->threshold = constrain(thresholdValue, 0, 1023);

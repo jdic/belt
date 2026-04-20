@@ -15,7 +15,7 @@ void DispenserUnit::init()
 
 void DispenserUnit::dispenseToken()
 {
-  if (stepper.isMoving())
+  if (!stepper.isMoving())
   {
     stepper.move(stepsPerToken);
   }

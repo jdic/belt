@@ -39,7 +39,7 @@ void Stepper::setSpeed(unsigned long interval)
   stepInterval = interval;
 }
 
-void Stepper::setspeedRPM(int rpm, int stepsPerRev)
+void Stepper::setSpeedRPM(int rpm, int stepsPerRev)
 {
   if (rpm <= 0) return;
   stepInterval = 60000000UL / (rpm * (long)stepsPerRev);

@@ -1,5 +1,5 @@
-#ifndef DIEPNSER_UNIT_H
-#define DIEPNSER_UNIT_H
+#ifndef DISPENSER_UNIT_H
+#define DISPENSER_UNIT_H
 
 #include <Arduino.h>
 #include "Stepper/Stepper.h"
